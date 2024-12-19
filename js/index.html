@@ -1,0 +1,38 @@
+<!DOCTYPE html> 
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aventure Interactive</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Lien vers votre fichier CSS -->
+</head>
+<body>
+    <!-- Écran de démarrage -->
+    <div id="start-screen">
+        <h1>Bienvenue dans l'aventure !</h1>
+        <form id="player-form">
+            <label for="name-input">Entrez votre nom :</label>
+            <input type="text" id="name-input" required />
+            <label for="age-input">Entrez votre âge :</label>
+            <input type="number" id="age-input" required />
+            <button type="submit">Commencer l'aventure</button>
+        </form>
+    </div>
+
+    <!-- Écran du jeu -->
+    <div id="game-screen">
+        <h2 id="chapter-title"></h2>
+        <p id="chapter-content"></p>
+        <div id="choices"></div>
+    </div>
+
+    <!-- Écran du mini-jeu -->
+    <div id="mini-game-screen" class="hidden">
+        <h2>Mini-jeu: Cliquez vite !</h2>
+        <p>Votre score est de: <span id="score">0</span></p>
+        <button id="click-btn">Cliquez ici !</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+
+/* Assurer que html et body prennent toute la hauteur */
+html {
+    height: 100%; /* Prendre 100% de la hauteur de la fenêtre */
+    margin: 0; /* Enlever les marges par défaut */
+    padding: 0; /* Enlever le padding par défaut */
+}
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('p5.jpg') ;
+    background-size: cover; /* Affiche toute l'image, même si elle ne couvre pas toute la page */
+    background-position:center;
+    background-color: white; /* Couleur de fond si l'image ne remplit pas toute la page */
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* Style de l'écran de démarrage */
+#start-screen {
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+}
+
+    #start-screen h1 {
+        color: #853838;
+        font-size:70px;
+    }
+
+    #start-screen input, #start-screen button {
+        width: 20%;
+        padding: 9px;
+        margin: 5px 0;
+    }
+
+    #start-screen button {
+        cursor: pointer;
+        background-color: #376981;
+        color: #853838;
+        border: none;
+        font-size: 13px;
+    }
+
+/* Style de l'écran de jeu */
+#game-screen {
+    display: none;
+    text-align: center;
+}
+
+
+
+/* Masquer ou afficher les écrans en fonction des actions */
+.hidden {
+    display: none;
+}
+/* Style pour le titre du chapitre */
+#chapter-title {
+    font-size: 2.5em; /* Augmente la taille de la police */
+    color: #853838; /* Couleur bleue pour le titre */
+    text-align: center; /* Centrer le texte */
+    margin-bottom: 20px;
+
+    /* Ajouter un espace en bas */
+}
+
+/* Style pour le contenu du chapitre */
+#chapter-content {
+    font-size: 1.5em; /* Taille du contenu du chapitre */
+    color: #162e39; /* Couleur gris foncé */
+    line-height: 1.6; /* Meilleur espacement des lignes */
+    text-align: justify; /* Justifier le texte pour un rendu élégant */
+    padding: 10px;
+   
+    background-color: #f9f9f9; /* Ajouter un fond clair */
+}
+
